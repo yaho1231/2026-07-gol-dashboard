@@ -1,0 +1,5 @@
+discord.py
+httpx
+python-dotenv
+audioop-lts
+certifi

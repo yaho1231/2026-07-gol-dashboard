@@ -1,0 +1,39 @@
+# --- 자격증명 (절대 커밋 금지) ---
+.env
+.env.local
+*.pem
+*.key
+
+# --- 운영 데이터 · 개인정보 ---
+inhouse.db
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+inhouse_analysis.xlsx
+logs/
+
+# --- 로컬 캐시 / 빌드 산출물 ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+get-pip.py
+backend/app/data/img_cache/
+dashboard/assets/img_cache/
+backend/.mmr_tier_migration_v1
+
+# --- 에디터 · OS ---
+.DS_Store
+.~lock.*#
+.idea/
+.vscode/
+
+# --- 로컬 도구 설정 ---
+.claude/settings.local.json
+
+# --- 서드파티 에이전트 툴링 (로컬 전용, 재설치 가능) ---
+.claude/skills/
+skills-lock.json
